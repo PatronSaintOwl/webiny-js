@@ -31,7 +31,14 @@ export interface PageBuilderStorageOperations extends BasePageBuilderStorageOper
     getTable: () => Table;
     getEsTable: () => Table;
     getEntities: () => Record<
-        "system" | "settings" | "categories" | "menus" | "pageElements" | "pages" | "pagesEs",
+        | "system"
+        | "settings"
+        | "categories"
+        | "menus"
+        | "pageElements"
+        | "pages"
+        | "pagesEs"
+        | "blockCategories",
         Entity<any>
     >;
 }
